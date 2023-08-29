@@ -19,3 +19,62 @@ What is Java:
     - Java is an object oriented language,
         ? What does that mean?
             - That objects are the primary method of composition in the language, which we discuss in Java II
+
+History:
+    - Starting in 1991 called the Green Project
+    - The Goal: was to create a language that is adaptable multiple operating systems.
+    - The Original Name was Oak
+        - Based on the Oak tree that was outside the windows of the devs office
+
+    - But due to copyright issues it was changed to 'Java'
+        - All because the amount of coffee the developers were drinking
+    - Which created a tagline: "Write Once, Run Everywhere"
+
+    Java was first released in 1995 by James Gosling
+
+    - When First created java was upgraded yearly.
+    - By 1998 Java SE (Standard Edition) & Java EE (Enterprise Edition)
+    - By 2004, They released Java 5.0,c
+        - from here is what you see now of Java 5, Java 6, Java 7, and so on.
+    - By 2006 - 2010, You can see that there was a hold and not must updates was created
+    - By 2010, Oracle Bout Sun Microsystems
+        - Now we will see an increase of updates
+    - On 2014, Java SE 8 was created
+        - Which is still popular as of 2019
+    - On sept 2018, Java SE 11 (LTS)
+        - Long term support versions
+        -  Oracle plan was that every 3 years they will release a new long term support version
+        - This version will maintain support for five years
+        - Then extended support available for 3 years
+    - Java 12, 13, 14, 15 ,and 16 were rapid release versions
+        - They wont get long term support, just only six months till the next one is released
+
+
+Editions:
+    - Java runs everywhere and can be very adaptable
+    - What are some Java programs we can build?
+        - Web Application
+        - Desktop application
+        - Web Servers
+        - Embedded Systems
+        - And More
+   ?What is the editions?
+        - Java SE
+            - The core functionality
+            - everything from the basic types and objects to high level vlasses that are used for networking, security, database access, GUI development and XML parsing
+        - Java EE
+            - is built on top of Java SE
+            - provides an API and runtime environment for developing and running large scale applications
+            - Containing Servlets, JSP, and JDBC libraries
+            - We will jump into this in Java III
+        - Java FX
+            - Set of graphic and media packages that enable developers to design create test and deploy great applications
+            - display information in a high-performance modern user interface that features audio, video, graphics, and animation.
+        - Java ME (Micro Edition)
+            - designed for resource-constrained devices like e-book readers, Blu-ray Disc players, Voice Over IP telephones, televisions, printers, residential sensors and more
+        - Android
+
+
+Components of Java:
+
+
