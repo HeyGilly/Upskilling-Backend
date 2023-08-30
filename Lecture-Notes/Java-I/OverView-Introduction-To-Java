@@ -120,20 +120,41 @@ Comparing Java and Javascript:
 
 Compiling and Interpreting Code:
 
+    1. All code is defined in classes.
+        - Classes are defined in source code files with a '.java' extension
+    2. The source code is compiled
+        - The compiler 'javac' compiles the java code into bytecode
+        - We wont interact with it directly, We use IntelliJ (an IDE) automates it for you
+        - When this runs, you'll get an output of a file with an extension of '.class'
+            - This file contains JVM Bytecode
+        - Also when this runs, you will encounter (if any) compile-time errors.
+            - These errors indicates something is wrong and that we need to fix before compiling the code.
+                Example: Syntax error
+    3. Once Compiled, the bytecode runs on the JVM
+        - The JVM interprets the bytecode, turning it into 'Machine Code'
+        - When this happens, you may encounter run-time errors,
+            - This occurs when a program successfully compiles but fails to execute
+            - These are the errors which are not detected by the compiler and produce wrong results.
+            - They prevent the code from complete execution.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+Hello World
+   1. Open Sublime
+   2. Create a main method for your Hello World
+       public class HelloWorld {
+           public static void main(String[] args) {
+               System.out.println("Hello World!");
+           }
+       }
+   3. Save as HelloWorld.java
+   4. Show the location in your IdeaProjects
+        - Also show that there is no Class yet
+   4. Open terminal
+   5. 'ls' -> 'cd IdeaProjects' -> 'ls'
+   6. 'javac HelloWorld.java' in terminal
+   7. go to IdeaDirectory and show class created
+   8. Go to sublime -> command+o -> locate class and open
+        - This is Bytecode
 
 
 
