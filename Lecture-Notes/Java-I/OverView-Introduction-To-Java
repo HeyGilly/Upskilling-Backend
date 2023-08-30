@@ -15,11 +15,6 @@ Today's Agenda:
 OverView:
     - Read the Overview from the curriculum to students
 
-What is Java:
-    - Java is an object oriented language,
-        ? What does that mean?
-            - That objects are the primary method of composition in the language, which we discuss in Java II
-
 History:
     - Starting in 1991 called the Green Project
     - The Goal: was to create a language that is adaptable multiple operating systems.
@@ -61,7 +56,7 @@ Editions:
    ?What is the editions?
         - Java SE
             - The core functionality
-            - everything from the basic types and objects to high level vlasses that are used for networking, security, database access, GUI development and XML parsing
+            - everything from the basic types and objects to high level glasses that are used for networking, security, database access, GUI development and XML parsing
         - Java EE
             - is built on top of Java SE
             - provides an API and runtime environment for developing and running large scale applications
@@ -74,7 +69,78 @@ Editions:
             - designed for resource-constrained devices like e-book readers, Blu-ray Disc players, Voice Over IP telephones, televisions, printers, residential sensors and more
         - Android
 
-
 Components of Java:
+    - What is Java?
+        - A Object-oriented, meaning you are designing everything as an object
+        - Allowing us to build code in small chunks
+        - making it easy to debug and maintain over time.
+        - Java is portable
+        - Allowing us to compile once and then run on multiple operating systems.
+
+    - An example is our IntelliJ (Eclipse, Visual Studios) is an IDE (integrated development environment) that help us develops code.
+      - you need to configure the JDK within the IDE
+    - IntelliJ has the JDK (Java development Kit) which is necessary to create and build Java applications
+        - you'll want to have the JDK installed because it gives you the tools to write, compile, and test your Java code.
+            - The JDK contains the JRE (Java Runtime Environment)
+            - JRE includes the Java Virtual Machine (JVM), class libraries, and other runtime components required to run Java applications.
+            - When a user wants to run a Java program on their machine, they need the JRE installed
+                JRE is all that's required to run Java applications
+
+       - SUMMARY, JDK includes JRE and is required to create Java applications. Where JRE, is needed by end users who want to RUN java application on their systems.
+
+
+
+Comparing Java and Javascript:
+    - Even though they names seem similar, they are not related at all.
+    - Both have different purposes and different principles.
+    - Java
+        - compiled into bytecode, which is executed by the Java Virtual Machine (JVM) at runtime.
+        - Java applications can run on any platform that has a compatible JVM
+        - Java has different editions, Standard edition, Enterprise Edition, Micro Edition
+
+        - widely used for building a wide range of applications, including desktop software, web applications, mobile apps (Android), server-side applications, and more.
+        - more rigid and strongly-typed syntax
+        - you need to declare the data type of a variable before using it, and the type cannot change during runtime
+        - a class-based object-oriented programming paradigm
+        - used for a wide range of applications, including enterprise software, Android app development, backend services, and more.
+    - Javascript
+        -  JavaScript code is interpreted by web browsers directly.
+        - JavaScript primarily runs within web browsers
+
+        - enables interactivity in web pages and web applications. It runs directly in web browsers and is responsible for behaviors of the site.
+        -JavaScript has a more flexible and loosely-typed syntax.
+        - JavaScript uses dynamic typing, allowing variables to change their type during runtime.
+        - a prototype-based object-oriented
+        - mainly used for enhancing web interactivity, creating browser-based games, building web applications, and more
+
+    - Both are broadly portable,
+        - Java through its virtual machine
+        - JS runs on various browser.
+
+
+Compiling and Interpreting Code:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
