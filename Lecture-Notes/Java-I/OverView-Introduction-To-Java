@@ -138,35 +138,48 @@ Compiling and Interpreting Code:
             - They prevent the code from complete execution.
 
 
-Example of Compiling and Interpreting - Hello World
-   1. Open Sublime
-   2. Create a main method for your Hello World
-       public class HelloWorld {
-           public static void main(String[] args) {
-               System.out.println("Hello World!");
-           }
-       }
-   3. Save as HelloWorld.java
-   4. Show the location in your IdeaProjects
-        - Also show that there is no Class yet
-   4. Open terminal
-   5. 'ls' -> 'cd IdeaProjects' -> 'ls'
-   6. 'javac HelloWorld.java' in terminal
-   7. go to IdeaDirectory and show class created
-   8. Go to sublime -> command+o -> locate class and open
-        - This is Bytecode
+Example of Compiling and Interpreting:
+    Syntax and  Hello World:
+       1. Open Sublime
+       2. Create a main method for your Hello World
 
-Syntax
+               public class HelloWorld {
+                  public static void main(String[] args) {
+                      System.out.println("Hello World!");
+                  }
+              }
 
-        public class HelloWorld {
-           public static void main(String[] args) {
-               System.out.println("Hello World!");
-           }
-       }
+               - Every Java program has to have a class, All java must be inside a class
+               - The Main function is the entry point to our program.
+               - Everything from the public class and the main function is what you need in order to make your application run.
+               - Everything inside of your main method is what make your application unique.
+               - So with javascript we had console.log, well with Java we have System.out.println()
 
+       3. Save as HelloWorld.java
+       4. Show the location in your IdeaProjects
+            - Also show that there is no Class yet
+   Compiling The Java Code:
+   - Unlike other languages, Java must be compiled before it runs
+       4. Open terminal
+       5. 'ls' -> 'cd IdeaProjects' -> 'ls'
+       6. 'javac HelloWorld.java' in terminal
+       7. go to IdeaDirectory and show class created
+       8. Go to sublime -> command+o -> locate class and open
+            - This is Bytecode
+    Run Application in Terminal:
+    - Will be calling the .class (Bytecode) without the .class extension
+        9. Terminal: java HelloWorld
 
+    BONUS:
+        - If i was to go back and change something in my .java file and go back to the terminal and run it
+        - What will it show when i run it?
+        - Why does this happen?
+            - You will need to re-compile the program to get the latest version.
+        Example:
+            10. 'javac HelloWorld.java' in terminal
+            11. java HelloWorld
 
-
+    - This can be quite frustrating doing it manually like this, and this is why we have a IDE. (intelliJ)
 
 
 
