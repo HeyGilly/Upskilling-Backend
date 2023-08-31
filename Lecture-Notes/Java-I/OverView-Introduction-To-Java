@@ -138,7 +138,7 @@ Compiling and Interpreting Code:
             - They prevent the code from complete execution.
 
 
-Hello World
+Example of Compiling and Interpreting - Hello World
    1. Open Sublime
    2. Create a main method for your Hello World
        public class HelloWorld {
@@ -156,7 +156,13 @@ Hello World
    8. Go to sublime -> command+o -> locate class and open
         - This is Bytecode
 
+Syntax
 
+        public class HelloWorld {
+           public static void main(String[] args) {
+               System.out.println("Hello World!");
+           }
+       }
 
 
 
