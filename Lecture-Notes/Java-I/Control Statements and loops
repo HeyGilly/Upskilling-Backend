@@ -1,0 +1,43 @@
+Control Statements and loops
+
+Today's Agenda:
+    - Boolean Expressions
+    - Logical Operators
+    - String Comparison
+    - Control Structures
+        - if Statement
+        - Switch Statements
+        - While Loop
+        - Do Loop
+        - For Loop
+        - Break and Continue
+
+Boolean Expressions
+    - An expression that evaluates to a boolean value
+    - Either true or false
+    - There is 6 relational operators, returning a boolean value
+            ==  Equality
+            !=  Inequality
+            >   Greater Than
+            <   Less Than
+            >=  Greater Than or Equal
+            <=  Less Than or Equal
+    - Unlike Javascript, Java has no concept of truthy or falsy, the expressions must evaluate to boolean values
+
+Logical Operators
+    - Allow us to combine multiple boolean values to produce a single boolean value.
+    -
+
+String Comparison
+
+Control Structures
+
+If Statement
+
+While Loop
+
+Do Loop
+
+For Loop
+
+Break and Continue
