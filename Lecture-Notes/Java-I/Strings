@@ -1,0 +1,17 @@
+Strings
+
+Today's Agenda:
+    - String Definition
+    - Immutability and Concatenation
+    - Comparing Strings
+    - String Comparison Method
+    - String Manipulation Methods
+
+
+String Definition:
+    - A string is letters, numbers, and special characters strung together.
+    - String are objects, not primitives.
+    - This means that string variables are reference type, not primitive type, and that is why '==' operator does not behave as expected when comparing strings.
+    - even though they had the same value, they were two distinct objects
+        - one was created from a string literal
+        - the other was created by the scanner reading what the user typed into
