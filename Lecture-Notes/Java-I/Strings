@@ -36,3 +36,50 @@ Immutability and Concatenation
         System.out.println(message); // prints "Hello, World!"
 
     ** Now you may think the example above may disprove string is immutability thinking we changed the value of the message variable, However your wrong. When we do a string concatenation, we are not modifying the original string, rather we are creating a new String object, updating the variable message to the new String object instead of the old one.
+
+
+Comparing Strings
+    - Since strings are not primitive data types but objects, we must compare them rather than the relational operators
+    - If you try to compare the two String objects, it will not work when using '=='
+    - The two methods that we should use when comparing String objects:
+        - '.equals()'
+        - '.equalsIgnoreCase()'
+
+    Example:
+
+     DON"T DO:
+        if ("I am a string" == "I am a string") {
+            System.out.println("Strings are equal");
+        }
+
+     DO THIS INSTEAD:
+        if ("I am a string".equals("I am a string")) {
+            System.out.println("Strings are equal");
+        }
+
+
+String Comparison Methods:
+    - These are some common methods, we use to compare strings
+    - All of the methods here will return 'True' or 'False'
+
+    '.equals()'             Case-Sensitive, Determine if two strings have the same value
+    '.equalsIgnoreCase()'   Not Case-Sensitive, Determine if two strings have the same value
+    '.startsWith()'         Case-Sensitive, If one String starts with another
+    '.endsWith()'           Case-Sensitive, If one string ends with another
+
+    EXAMPLE:
+
+        String input = "Codeup Rocks!";
+
+        input.equals("codeup rocks!"); // false
+        input.equals("Codeup Rocks!"); // true
+
+        input.equalsIgnoreCase("codeup rocks!"); // true
+        input.equalsIgnoreCase("Codeup Rocks!"); // true
+
+        input.startsWith("codeup") // false
+        input.startsWith("Codeup") // true
+
+        input.endsWith("rocks") // false
+        input.endsWith("rocks!") // false
+        input.endsWith("Rocks!") // true
