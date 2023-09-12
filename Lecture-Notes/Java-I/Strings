@@ -15,3 +15,24 @@ String Definition:
     - even though they had the same value, they were two distinct objects
         - one was created from a string literal
         - the other was created by the scanner reading what the user typed into
+
+Immutability and Concatenation
+    - String are immutable
+        Meaning: Once a string is created, it cannot be changed
+
+    Example:
+          String s="Sachin";
+           s.concat(" Tendulkar");//concat() method adds the string at the end
+           System.out.println(s);//will print Sachin because strings are immutable objects
+
+    - Concatenation:
+        - The '+' operator performs string concatenation when one of its operands is a string
+        - Another way is with the 'concat()' on any string object
+
+    Example:
+        String message = "Hello";
+        System.out.println(message); // prints "Hello"
+        message = message + " World!";
+        System.out.println(message); // prints "Hello, World!"
+
+    ** Now you may think the example above may disprove string is immutability thinking we changed the value of the message variable, However your wrong. When we do a string concatenation, we are not modifying the original string, rather we are creating a new String object, updating the variable message to the new String object instead of the old one.
