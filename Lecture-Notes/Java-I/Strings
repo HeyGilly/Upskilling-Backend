@@ -170,15 +170,40 @@ String Manipulation Methods:
 
 
         Example:
-
+            String s1="Welcome to the Darkside!";
+            System.out.println(s1.substring(11,14)); //returns " the"
+            System.out.println(s1.substring(3,s1.length()-1)); //returns come to the Darkside
+            System.out.println(s1.substring(3)); //returns come to the Darkside!
+            System.out.println(s1.substring(2,-1)); //returns ERROR
 
 
     .toLowerCase()
+        - returns the string in lowercase
+
+        Example:
+            String upperCaseString = "THIS IS ME BEING LOUD!";
+            System.out.println("Original: "+upperCaseString);
+            System.out.println("Speaking Softly: "+upperCaseString.toLowerCase());
+
     .ToUpperCase()
+        - Returns the string in uppercase
+
+        Example:
+            String speakUp = "what you just say to me?";
+            System.out.println("Original: "+ speakUp);
+            System.out.println("Speaking Up: "+ speakUp.toUpperCase());
+
     .trim()
+        - Eliminates leading and trailing spaces
+
+        Example:
+            String noSpace = "     Give Me Room     ";
+            System.out.println("Original: "+noSpace);
+            System.out.println("No Space: "+noSpace.trim());
 
 
-
+    BONUS:
+    System.out.println("No Space & Replace: "+ noSpace.trim().replace("Give", "Hug").replace("Room", "NOW!"));
 
 
 
