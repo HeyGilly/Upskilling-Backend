@@ -1,0 +1,34 @@
+Methods
+
+Today's Agenda:
+    - Defining Methods
+        - Calling Methods
+    - Method Overloading
+    - Passing Parameters to Methods
+    - Recursion
+
+
+Defining Methods
+    - Methods are similar to functions, meaning it is built to perform a specific task
+    - Similar to functions in JS, methods accept parameters and produce an output
+
+    Basic Syntax:
+        public static returnType methodName([param1[, param2[, ...]]) {
+            // the statements of the method
+            // a return statement, if a return type is declared
+        }
+
+        * public:
+            - shows that this method can be accessed by code outside of the class
+        * static:
+            - When declared it states the method belongs to the class rather than a specific instance.
+            - Meaning it can be called without creating an instance of the class.
+            - Allows a method, to be called before an object of the class is created,
+            - Static Methods can: access static data directly & call other static methods only
+
+        * returnType:
+            - THis is the return type of the method
+            - All methods must define the type of the value they will return
+            - If there is no return, use the special keyword 'void'
+        * methodName
+            - The name of the function
