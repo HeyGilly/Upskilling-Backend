@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodExercises {
 
     public static int addition(int num1, int num2){
@@ -12,15 +14,14 @@ public class MethodExercises {
         return num1 * num2;
     }
 
-    public static int multiplication_02(int n, int num2) {
-        if (num2 == 0) {
-            System.out.println("All done!");
-            return n;
+    static int result = 0;
+
+    public static int multiplication_02(int a, int b) {
+        if ( b > 0){
+            result += a;
+            multiplication_02(a,b-1);
         }
-        n += n;
-        num2 -= 1;
-        multiplication_02(n,num2);
-        return n;
+        return result;
     }
 
     public static int division(int num1, int num2){
@@ -32,6 +33,25 @@ public class MethodExercises {
     }
 
 
+    public static void rollingDice() {
+        Scanner sc = new Scanner(System.in);
+
+        String rollAgain;
+        do {
+            System.out.println("Enter the number of sides of the pair of dice");
+            int diceSides = sc.nextInt();
+
+            int diceOne = (int) Math.floor(Math.random() * (diceSides - 1 + 1) + 1);
+            int diceTwo = (int) Math.floor(Math.random() * (diceSides - 1 + 1) + 1);
+
+            System.out.println("Dice One: " + diceOne + "\nDice Two: " + diceTwo);
+
+            sc.nextLine();
+            System.out.println("Would you like to roll Again? y/n");
+            rollAgain = sc.nextLine();
+        } while (rollAgain.equalsIgnoreCase("y"));
+        System.out.println("Thank for playing");
+    }
 
     public static void main(String[] args) {
 
@@ -51,6 +71,14 @@ public class MethodExercises {
 //        System.out.println("Modulus: "+ modulus(6,2));
 
         //Multiplication Without *
-        System.out.println(multiplication_02(2,3));
+        System.out.println(multiplication_02(3,5));
+
+        // Rolling Dice
+        rollingDice();
+
+        //-- Game Development 101
+
+
+
     }
 }
