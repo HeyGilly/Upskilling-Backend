@@ -12,6 +12,18 @@ Today's Agenda:
     - Exercise Time
 
 
+/** Additional Notes: Kenneth H.
+    - Allow students time to look over the curriculum
+    - Mars Rover is built on Java
+    - What is IoT (Internet of things)
+        - what can we build with it?
+    - Description of all types of Java
+
+
+
+
+
+
 OverView:
     - Read the Overview from the curriculum to students
 
@@ -89,6 +101,8 @@ Components of Java:
        - SUMMARY, JDK includes JRE and is required to create Java applications. Where JRE, is needed by end users who want to RUN java application on their systems.
 
 
+**What is compiled vs interpreted?
+
 
 Comparing Java and Javascript:
     - Even though they names seem similar, they are not related at all.
@@ -136,6 +150,13 @@ Compiling and Interpreting Code:
             - This occurs when a program successfully compiles but fails to execute
             - These are the errors which are not detected by the compiler and produce wrong results.
             - They prevent the code from complete execution.
+
+
+****?? Kenneth Notes:
+    - What is public static void?
+        - wait from static for a future lesson, but can discuss public, private, protected.
+
+
 
 
 Example of Compiling and Interpreting:
