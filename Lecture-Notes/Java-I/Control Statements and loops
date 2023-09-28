@@ -21,7 +21,7 @@ Boolean Expressions
             >   Greater Than
             <   Less Than
             >=  Greater Than or Equal
-            <=  Less Than or Equal
+            <=  Less Than oar Equal
     - Unlike Javascript, Java has no concept of truthy or falsy, the expressions must evaluate to boolean values
 
 Logical Operators
