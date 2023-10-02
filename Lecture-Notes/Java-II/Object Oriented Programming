@@ -37,4 +37,93 @@ Classes and Objects
     EXAMPLE:
 
         - Create a Person class in my src.
-        -
+
+         //-- Three Fields (Instance Variable & Instance Method)
+            //-- 2 Instance Variable
+            public String firstName;
+            public String lastName;
+
+            //-- 1 Instance Method
+            public String sayHello(){
+                return String.format("Hello from %s %s!", firstName, lastName);
+            }
+
+            //-- Main Method
+            public static void main(String[] args) {
+                //-- Creating an Instance of our Person class
+                //-- Defining a variable (human1) with the type of person
+                Person human1 = new Person();
+
+                //-- Assigning values to the object's fields
+                human1.firstName = "Rick";
+                human1.lastName = "Sanchez";
+                //-- Calling the methods and printing its return
+                System.out.println(human1.sayHello());
+            }
+
+    Static vs Instance
+        - Fields can belong to a class or an object
+        - For the recent example we only seen instance fields.
+            - Fields that belong to an instance
+            - Meaning that each object can have a different values for their instance field.
+
+        Example:
+
+            - Add to MAIN method
+
+                //-- Creating two other humans
+                //  Each instance of the person will collect different values for each field
+                //  However they both will have firstName and lastName field
+                Person human2 = new Person();
+                human2.firstName ="Spongebob";
+                human2.lastName ="Squarepants";
+
+                Person human3 = new Person();
+                human3.firstName = "Sandy";
+                human3.lastName = "Checks";
+
+                System.out.println(human2.sayHello());
+                System.out.println(human3.sayHello());
+
+
+        - Static Fields:
+            - Belong to a class as a whole
+            - Accessible through the class itself.
+            - They are accessible without creating an instance of the class.
+
+            Example:
+            Math.PI
+
+            - We didn't write any code that instantiates the Math class, we just added the "." after the class name and refer to the static field
+
+            - Static fields are defined with the static keyword, and are shared by all instances of the class,
+             - Static fields should not be anything that is supposed to be unique to instances of the class.
+             - Should contain information that all instances will use or methods and fields that are meant to be accessed only statically.
+
+            Example:
+
+                //Static Property
+                public static double pi = 3.14159;
+
+                // Static Methods
+                public static int add(int x, int y){
+                    return x + y;
+                }
+                // Static Methods
+                public static int multiply(int x, int y){
+                    return x * y;
+                }
+
+                System.out.println(Person.add(2,3));
+                System.out.println(Person.multiply(2,3));
+
+            - The Person class is only meant to be referenced statically, meaning that we'll never create instances of it.
+            - Referring methods and fields through the class name.
+
+
+        Example: Both Static and Instance Fields
+
+
+
+
+

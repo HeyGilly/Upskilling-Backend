@@ -4,27 +4,29 @@
 
 public class Person {
 
-    //-- Three Fields (Instance Variable & Instance Method)
-    //-- 2 Instance Variable
-    public String firstName;
-    public String lastName;
+    //-- Static Property
+    public static long worldPopulation = 7_500_000_000L;
+    //-- Instance Property
+    public String name;
 
-    //-- 1 Instance Method
-    public String sayHello(){
-        return String.format("Hello from %s %s!", firstName, lastName);
-    }
 
-    //-- Main Method
+
     public static void main(String[] args) {
-        //-- Creating an Instance of our Person class
-        //-- Defining a variable (human1) with the type of person
-        Person human1 = new Person();
 
-        //-- Assigning values to the object's fields
-        human1.firstName = "Rick";
-        human1.lastName = "Sanchez";
-        //-- Calling the methods and printing it's return
-        System.out.println(human1.sayHello());
+    Person theBestDrummerAlive = new Person();
+    theBestDrummerAlive.name = "Neil Peart";
+
+    Person.worldPopulation += 1;
+
+        System.out.println(Person.worldPopulation);
+
+        // Technically will work, however it's better to reference
+        // static properties through the class, not instances
+        System.out.println(theBestDrummerAlive.worldPopulation);
+
+        //-- Error will occur
+        System.out.println(Person.name);
+
     }
 
 
