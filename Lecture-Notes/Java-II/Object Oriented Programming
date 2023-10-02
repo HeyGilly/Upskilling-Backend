@@ -1,0 +1,40 @@
+Object Oriented Programming
+
+* In this lecture we will learn to create and use:
+    - Objects
+    - Static
+    - Instance fields
+    - Constructors
+    - Visibility
+
+* We been using Objects-Oriented concepts, such as 'Math' that contains static methods and fields and the 'Scanner' class,
+which we have created instances of to get command line input from the user.
+*
+
+Today's Agenda:
+    - Classes and Objects
+    - Static vs Instance
+    - Constructors
+    - The 'This' Keyword
+    - Visibility
+
+
+
+Classes and Objects
+    - CLASSES:
+        - Used to define a custom type of Java
+        - Think of a class as a blueprint for objects.
+    - FIELD:
+        - A variable or method that belongs to an object or a class
+        - Can be accessed with the "." operator
+        - Fields belongs to objects, but can be defined as belonging to a class with the static keyword.
+        - Fields are either properties (Variables) or Methods (Functions)
+    - OBJECTS:
+        - an instance of a class
+        - Objects have fields and methods, and are instantiated.
+        - Created with a 'new' keyword
+
+    EXAMPLE:
+
+        - Create a Person class in my src.
+        -
