@@ -1,0 +1,107 @@
+Inheritance and Polymorphism
+
+* So for this lesson we will be discussing 2 OOP concepts
+
+Today's Agenda:
+    - Inheritance
+        - Extending Class
+        - Overriding
+    - Access Modifiers
+    - The SUPER keyword
+    - Polymorphism
+    - The FINAL keyword
+
+
+Inheritance:
+    - When a class extends or 'inherit' from another class with the 'extends' keyword.
+    - A new class can inherit fields and methods from an existing class.
+    - When we inherit, we call these subclasses
+    - The Class that is being inherited from, its called 'superclass'
+
+    Syntax Example:
+        class Subclass-name extends Superclass-name{
+           //methods and fields
+        }
+
+
+    Basic Example:
+        * Create a Employee Class:
+            FIELDS:
+               private int salary = 65_000;
+
+
+                public int getSalary() {
+                    return salary;
+                }
+
+        * Creating a Programming Class that extends to Employee
+            FIELDS:
+                private int bonus = 35_000;
+            MAIN METHOD:
+                Programmer coder = new Programmer();
+                System.out.println("Programmer salary is: $"+coder.getSalary());
+                System.out.println("Programmer bonus is: $"+coder.bonus);
+
+
+    - Programmer extends to Employee
+    -  Programmer is using the getSalary() method, to get the salary
+    - We never defined a getSalary() method or salary property on the programmer class,
+    - It is simply using the fields that it inherited from the 'Person' class.
+
+
+Extending Classes:
+    - Following our example, We will have access to the getSalary() method and the salary property inside of the Programming class.
+    - That is because we have the 'extends' keyword attached to the subclass. (pulling from the superclass)
+    - Important:
+        - The employee class does not hae access to bonus property.
+        - Inheritance is one-directional
+            - subclasses gain access ot the fields of their superclasses, but not the other way around.
+
+Overriding:
+    - is when a subclass defines a method with the same name, return type and parameters as a method in the superclass.
+    - This allows subclass more control and allows us to customize our own method and be more personal.
+
+    Example: (Add to the example code)
+     * Employee Class:
+                FIELDS:
+                   public String status(){
+                       return "Searching for work!";
+                   }
+
+            * Creating a Programming Class that extends to Employee
+                FIELDS:
+                    public String status(){
+                            return "CODE CODE CODE!";
+                        }
+                MAIN METHOD:
+                  Programmer coder = new Programmer();
+                  Employee employee = new Employee();
+
+                  System.out.println("Employee Status: "+employee.status());
+                  System.out.println("Programmer Status: "+coder.status());
+
+        - The status() method in the programmer class (subclass) overrides the status() method created in the employee class (superclass)
+
+
+Access Modifiers:
+    - We talked about visibility in OOP.
+    - Which refers the level of access outside access allowed to class's field.
+    - Public:
+        - Is everywhere
+    - private
+        - fields that can NOT be called outside of the class that defined them.
+    - protected:
+        - When we want a field to be visible only to superclasses and subclasses, but not to any other classes.
+        - used to access the methods or data members of a class within the same package as well as outside the package but only through inheritance.
+        - Let fields be accessible within the same package or subclasses in different packages.
+        -
+
+
+
+
+
+
+
+
+
+
