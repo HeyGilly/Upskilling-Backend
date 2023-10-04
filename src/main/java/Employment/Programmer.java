@@ -1,25 +1,38 @@
 package Employment;
 
 public class Programmer extends Employee{
-    private int bonus = 35_000;
 
+    //Field
+    private int bonus = 5_000;
 
-    public String status(){
-        return "CODE CODE CODE!";
+    //-- constructor with SUPER keyword
+    public Programmer(int id, String name, int salary, int bonus){
+        super(id, name, salary);
+        this.bonus = bonus;
     }
 
-    public static void main(String[] args) {
-
-        Programmer coder = new Programmer();
-        Employee employee = new Employee();
-
-
-        System.out.println("Programmer salary is: $"+coder.getSalary());
-        System.out.println("Programmer bonus is: $"+coder.bonus);
-
-        System.out.println("Employee Status: "+employee.status());
-        System.out.println("Programmer Status: "+coder.status());
-
-
+    // Empty Constructor
+    public Programmer() {
+        super();
     }
+
+    //-- Programmers Get bonus Annually
+    //   Notice an error appears
+    //   This happens because our salary is private.
+    //   Once changed to protected look at error go away.
+    //   Add super.salary
+    //      Notify you that the property is coming from the superclass (Parent)
+    public int getAnnualBonus(){
+        return super.salary + bonus;
+    }
+
+
+    //Override
+    @Override
+    public String currentStatus(){
+        return super.greetings() + "\nCurrent Status: I am a programmer";
+    }
+
+
+
 }
