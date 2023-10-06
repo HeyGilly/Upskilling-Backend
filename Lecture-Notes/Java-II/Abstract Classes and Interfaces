@@ -1,0 +1,19 @@
+Abstract Classes and Interfaces
+
+Today's Agenda:
+    - Abstract Classes
+    - Working with Abstract Classes
+    - INterfaces
+        - Working with Interfaces
+    - Interfaces vs Abstract Classes
+
+
+Abstract Classes:
+    - A class that can serve as a superclass, but can not directly instantiated.
+    - You can define a class by using the abstract' keyword in the class definition.
+    - A Abstract class can define abstract methods
+        - Methods with no body
+    - Abstract methods:
+        - Only provide information about the method name, return type and parameter.
+
+    - A class that inherits from an abstract class must define all abstract methods, or itself be abstract
