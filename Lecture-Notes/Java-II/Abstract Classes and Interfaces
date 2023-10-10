@@ -26,7 +26,11 @@ Abstract Classes:
     - A class that inherits from an abstract class must define all abstract methods, or itself be abstract
 
     _Why do we use Abstact Classes?
-        -
+        - Imagine we are building a team of superheroes (Avengers)
+        - You want them all to have certain abilities
+        - However each hero has their unique way of those powers.
+        - Abstract is like setting a rule that all superheroes must have certain abilities, but wil have different behaviors.
+        - How they save the day, is up to them.
 
 
 
