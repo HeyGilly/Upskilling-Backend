@@ -9,11 +9,28 @@ Today's Agenda:
 
 
 Abstract Classes:
-    - A class that can serve as a superclass, but can not directly instantiated.
-    - You can define a class by using the abstract' keyword in the class definition.
-    - A Abstract class can define abstract methods
-        - Methods with no body
-    - Abstract methods:
-        - Only provide information about the method name, return type and parameter.
+    - Like a blue print for other classes.
+    - Thin of it like a superhero custome design,
+    - The word 'abstract' in programming means something that is not complete or concrete.
+    - So an abstract class is like a half-way finished class,
+    - A class that can serve as a super class, but can not directly be instantiated,
+
+    - You can define an abstract class by using the keyword 'abstract' in the calss definition
+
+    - Inside an abstract class, we can have abstract methods.
+    - Which are abstracts without a body.
+        - Think of it like recipe title without the cooking steps.
+    We only know the name, what they return, and what they need to work.
+    - When you extend it to another class, you have to create the body of the method in the subclass.
 
     - A class that inherits from an abstract class must define all abstract methods, or itself be abstract
+
+    _Why do we use Abstact Classes?
+        -
+
+
+
+    KENNETH LECTURE:
+        - Show the example while lecturing.
+        - Have fun examples
+            character, wizards, warriors
