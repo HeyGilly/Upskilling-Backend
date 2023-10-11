@@ -7,7 +7,7 @@ public class Square extends Quadrilateral {
 
     @Override
     public double getPerimeter() {
-        return (2 * length) + (2 * length);
+        return 4 * length;
     }
 
 
@@ -18,13 +18,15 @@ public class Square extends Quadrilateral {
     }
 
     @Override
-    public void setLength(double length) {
-        this.length = length;
+    public void setLength(double sides) {
+        setWidth(sides);
+        this.length = sides;
     }
 
     @Override
-    public void setWidth(double width) {
-        this.width = width;
+    public void setWidth(double side) {
+        setLength(side);
+        this.width = side;
     }
 
 //    //constructor
